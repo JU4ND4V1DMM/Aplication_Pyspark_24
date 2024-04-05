@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Logo">
+    <file>ico/Logo_Label.png</file>
+  </qresource>
+  <qresource prefix="Ico_Calendar">
+    <file>ico/Left.png</file>
+    <file>ico/Right.png</file>
+  </qresource>
+</RCC>
