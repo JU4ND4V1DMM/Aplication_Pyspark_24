@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DB</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_Version_Control">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(162, 162, 162);
+font: italic 10pt &quot;MS Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Proyecto de Automatización - V. 1.08.661</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_LOGO">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>109</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../resources/ico/Logo_Label.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Vertical_Tittle">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>601</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Partitions_BD">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>100</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Particionar archivo seleccionado</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Total_Registers">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>370</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(217, 16, 76);
+font: 87 9pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>TOTAL DE REGISTROS:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Vertical_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>601</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Total_Registers_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>370</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>10</pointsize>
+      <weight>10</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(217, 16, 76);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>trial</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_CAM">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>160</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Filtro de CAM_Unif - Base General</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_MINS">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Reordenación de Demográficos</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Coding">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>280</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Exportar códigos VBA - Bash</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>509</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

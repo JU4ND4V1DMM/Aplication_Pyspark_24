@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main APP</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_Resources_to_Send">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Procesos para Envío de Recursos</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_LOGO">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>381</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../resources/Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Version_Control">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(162, 162, 162);
+font: italic 10pt &quot;MS Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Proyecto de Automatización - V. 1.08.661</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Upload_BD">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Procesos para Cargue de Asignación</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Login">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestión de Logueos</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Loaded_BD">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Procesos Post-Cargue de Asignación</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Growht">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(209, 209, 209);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestión de Crecimiento</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_Partitions">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>110</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Partitions">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>105</y>
+      <width>168</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 10pt &quot;Bahnschrift SemiBold&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Cantidad de Particiones           </string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="Group_Selection_Starter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>271</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 10pt &quot;Bahnschrift SemiBold&quot;;</string>
+    </property>
+    <property name="title">
+     <string>Selección Principal</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_Select_File">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	border-radius:8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 16, 76);
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(94, 94, 94);
+}
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Seleccionar Archivo</string>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Confirmation_LABEL">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>390</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>Group_Selection_Starter</zorder>
+   <zorder>label_LOGO</zorder>
+   <zorder>pushButton_Resources_to_Send</zorder>
+   <zorder>label_Version_Control</zorder>
+   <zorder>pushButton_Upload_BD</zorder>
+   <zorder>pushButton_Login</zorder>
+   <zorder>pushButton_Loaded_BD</zorder>
+   <zorder>pushButton_Growht</zorder>
+   <zorder>spinBox_Partitions</zorder>
+   <zorder>label_Partitions</zorder>
+   <zorder>Confirmation_LABEL</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCr_ditos">
+    <property name="title">
+     <string>Créditos</string>
+    </property>
+    <addaction name="actionDesarrolladores"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionArchivos_soportados"/>
+    <addaction name="actionGuia_de_uso"/>
+   </widget>
+   <addaction name="menuAyuda"/>
+   <addaction name="menuCr_ditos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDesarrolladores">
+   <property name="text">
+    <string>Desarrolladores</string>
+   </property>
+  </action>
+  <action name="actionArchivos_soportados">
+   <property name="text">
+    <string>Archivos soportados</string>
+   </property>
+  </action>
+  <action name="actionGuia_de_uso">
+   <property name="text">
+    <string>Guia de uso</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

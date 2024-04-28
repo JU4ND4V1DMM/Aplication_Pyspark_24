@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TablesWindow</class>
+ <widget class="QMainWindow" name="TablesWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1265</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TablesWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>501</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>Marca 0</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 30</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 60</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 90</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 120</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 150</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 180</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 210</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Potencial</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Prechurn</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Castigo</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>ASCARD</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BSCS</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset theme="Dark">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>RR</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SGA</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>60</y>
+      <width>501</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>Marca 0</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 30</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 60</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 90</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 120</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 150</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 180</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Marca 210</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Potencial</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Prechurn</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Castigo</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>ASCARD</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BSCS</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset theme="Dark">
+       <normaloff>../../../Program Files (x86)/Qt Designer</normaloff>../../../Program Files (x86)/Qt Designer</iconset>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>RR</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SGA</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="8" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="9" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="10" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_Total_Registers">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(217, 16, 76);
+font: 87 9pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>RECUENTO DE CUENTAS POR MARCA Y ORIGEN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Total_Registers_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(217, 16, 76);
+font: 87 9pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>SUMA DE DEUDAS POR MARCA Y ORIGEN</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>1191</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>ASCARD</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>BSCS</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>RR</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>SGA</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Total</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Marca 0</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 30</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset theme="Dark">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 60</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 90</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 120</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 150</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 180</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca 210</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Potencial</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Prechurn</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Castigo</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="9">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="0" column="10">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="9">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="1" column="10">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="9">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="2" column="10">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="9">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="3" column="10">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_Total_Registers_3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>470</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(217, 16, 76);
+font: 87 9pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>CANTIDAD DE REGISTROS POR MARCA Y ORIGEN</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>50</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SUMA DE DEUDAS</string>
+    </property>
+    <widget class="QLabel" name="Confirmation_LABEL">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>$0.000.000.000</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>190</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CANTIDAD DE CUENTAS</string>
+    </property>
+    <widget class="QLabel" name="Confirmation_LABEL_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>1.111.111.111</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>320</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CANTIDAD DE REGISTROS</string>
+    </property>
+    <widget class="QLabel" name="Confirmation_LABEL_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+     </property>
+     <property name="text">
+      <string>1.111.111.111</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1265</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

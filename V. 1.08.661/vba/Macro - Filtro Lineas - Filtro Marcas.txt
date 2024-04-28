@@ -1,0 +1,95 @@
+rergrewghbwbhSub Lines_Process()
+'
+' Proceso Diario Para Carga en Next
+' PASO A PASO (F8) - COMPLETO (F5)
+
+'
+    Call Update_Line_Q      'Llamado a una ordenaciï¿½n de la columna con valores ACTIVADA y DESACTIVADA
+    Call Filter_Q           'Delimitador de las celdas con valores separados por ; en la columna de direcciï¿½n completa
+    Call Update_Line_Q      'Rellamado de la funciï¿½n para ordenar columna [AccStsName?]
+    
+    Call Update
+    Range("A2").Select
+    
+End Sub
+
+Sub Update_Line_Q()
+'
+' Ordenaciï¿½n de la columna seleccionada
+'
+'
+    Columns("U:U").Select   'Selecciï¿½n de columna [AccStsName?]
+    ActiveWorkbook.Worksheets("CAM - UNIF REPORTE MULTICAMPAÑA").Sort.SortFields. _
+        Clear
+    ActiveWorkbook.Worksheets("CAM - UNIF REPORTE MULTICAMPAÑA").Sort.SortFields. _
+        Add2 Key:=Range("U:U"), SortOn:=xlSortOnValues, Order:=xlAscending _
+        , DataOption:=xlSortNormal
+    With ActiveWorkbook.Worksheets("CAM - UNIF REPORTE MULTICAMPAÑA").Sort
+        .SetRange Range("A:AZ")
+        .Header = xlNo
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    
+    'Ordenaciï¿½n completada
+    
+End Sub
+
+Sub Filter_Q()
+
+'
+' Delimtador de columna por signo de ;
+'
+'
+    Range("R1").Select                      'Selecciï¿½n del inicio de pila de la columna de referencia
+    Selection.End(xlDown).Select            'Redirecciï¿½n de posiciï¿½n hasta la cola de la pila
+    ActiveCell.Offset(1, 0).Select
+    ActiveCell.Offset(0, -1).Select
+    'Redirecciï¿½n de pocisiï¿½n de acuerdo a los dos pasos que anteceden
+    
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.TextToColumns Destination:=ActiveCell, DataType:= _
+        xlDelimited, TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, _
+        Tab:=False, Semicolon:=True, Comma:=False, Space:=False, Other:=False _
+        , FieldInfo:=Array(Array(1, 1), Array(2, 1), Array(3, 1), Array(4, 1), Array(5, 1), _
+        Array(6, 1), Array(7, 1), Array(8, 1), Array(9, 1), Array(10, 1), Array(11, 1), Array(12, 1) _
+        , Array(13, 1), Array(14, 1), Array(15, 1), Array(16, 1), Array(17, 1), Array(18, 1), Array( _
+        19, 1), Array(20, 1), Array(21, 1), Array(22, 1), Array(23, 1), Array(24, 1), Array(25, 1), _
+        Array(26, 1), Array(27, 1), Array(28, 1), Array(29, 1), Array(30, 1), Array(31, 1), Array( _
+        32, 1), Array(33, 1), Array(34, 1), Array(35, 1), Array(36, 1), Array(37, 1)), _
+        TrailingMinusNumbers:=True
+    
+    'Cï¿½digo para delimitar celdas faltantes
+    'IMPORTANTE: No se ha configurado para aceptar el mensaje de reemplazar valores
+    'Macro se corre paso a paso, aï¿½n no se puede ejecutar de corrido
+    
+End Sub
+
+Sub Update()
+'
+' Update Macro
+'
+
+'
+    Rows("1:1").Select
+    Selection.Insert Shift:=xlDown
+    Rows("2:2").Select
+    Selection.Delete Shift:=xlUp
+    Range("A1").Select
+    Selection.End(xlToRight).Select
+    Range("BD2").Select
+    Selection.End(xlDown).Select
+    Selection.End(xlUp).Select
+    Range("AZ2").Select
+    Range(Selection, ActiveCell.SpecialCells(xlLastCell)).Select
+    Range("AZ2:AZ949463").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.TextToColumns Destination:=Range("AZ2"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=False, FieldInfo _
+        :=Array(1, 2), TrailingMinusNumbers:=True
+    Range("AZ1").Select
+    
+End Sub
