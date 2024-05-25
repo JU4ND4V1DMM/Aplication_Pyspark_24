@@ -1,0 +1,96 @@
+import os
+from pyspark.sql import SparkSession, SQLContext
+from pyspark.sql.functions import col, when, lit
+
+def function_complete(input_folder, output_folder, output_folder2):
+   
+    spark = SparkSession \
+        .builder.appName("Trial") \
+        .getOrCreate()
+    spark.conf.set("mapreduce.fileoutputcommitter.marksuccessfuljobs","false")
+
+    sqlContext = SQLContext(spark)
+
+    files = []
+    for root, _, file_names in os.walk(input_folder):
+        for file_name in file_names:
+            if file_name.endswith('.csv') or file_name.endswith('.txt'):
+                files.append(os.path.join(root, file_name))
+
+    # Listas para almacenar los dataframes según el tipo de archivo
+    df_list_FO = []
+    df_list_RR = []
+    df_list_PYR = []
+    df_list_PYR_ASC = []
+
+    for file in files:
+        if file.endswith('.csv'):
+            df = spark.read.csv(file, header=True, inferSchema=True)
+        elif file.endswith('.txt'):
+            df = spark.read.option("delimiter", "\t").csv(file, header=True, inferSchema=True)
+        
+        # Identificar el tipo de archivo y añadirlo a la lista correspondiente
+        if "FO" in file:
+            df_list_FO.append(df.select("CUENTA", "PAGO", "FECHA_APLICACION").withColumn("ARCHIVO", lit("FO")))
+        elif "RR" in file:
+            df_list_RR.append(df.select("Cuenta", "Pago", "Fecha")
+                                .withColumnRenamed("Cuenta", "CUENTA")
+                                .withColumnRenamed("Pago", "PAGO")
+                                .withColumnRenamed("Fecha", "FECHA_APLICACION")
+                                .withColumn("ARCHIVO", lit("RR")))
+        elif "PYR" in file and "ASC" not in file:
+            df_list_PYR.append(df.select("CUSTCODE", "CACHKAMT", "FECHA")
+                                .withColumnRenamed("CUSTCODE", "CUENTA")
+                                .withColumnRenamed("CACHKAMT", "PAGO")
+                                .withColumn("ARCHIVO", lit("PYR")))
+        elif "PYR_ASC" in file:
+            df_list_PYR_ASC.append(df.select("NUMERO_CREDITO", "MONTO_PAGO", "FECHA")
+                                    .withColumnRenamed("NUMERO_CREDITO", "CUENTA")
+                                    .withColumnRenamed("MONTO_PAGO", "PAGO")
+                                    .withColumn("ARCHIVO", lit("PYR_ASC")))
+
+    # Procesar cada lista de dataframes según sea necesario
+    if df_list_FO:
+        df_FO = df_list_FO[0]
+        for df in df_list_FO[1:]:
+            df_FO = df_FO.unionByName(df, allowMissingColumns=True)
+        df_FO.repartition(1).write.mode('overwrite').csv(output_folder + '_FO', header=True)
+
+    if df_list_RR:
+        df_RR = df_list_RR[0]
+        for df in df_list_RR[1:]:
+            df_RR = df_RR.unionByName(df, allowMissingColumns=True)
+        df_RR.repartition(1).write.mode('overwrite').csv(output_folder + '_RR', header=True)
+
+    if df_list_PYR:
+        df_PYR = df_list_PYR[0]
+        for df in df_list_PYR[1:]:
+            df_PYR = df_PYR.unionByName(df, allowMissingColumns=True)
+        df_PYR.repartition(1).write.mode('overwrite').csv(output_folder + '_PYR', header=True)
+
+    if df_list_PYR_ASC:
+        df_PYR_ASC = df_list_PYR_ASC[0]
+        for df in df_list_PYR_ASC[1:]:
+            df_PYR_ASC = df_PYR_ASC.unionByName(df, allowMissingColumns=True)
+        df_PYR_ASC.repartition(1).write.mode('overwrite').csv(output_folder + '_PYR_ASC', header=True)
+
+    spark.stop()
+
+def Function_ADD(RDD):
+    filter_origins = ["Postpago", "Equipo", "Hogar", "Negocios"]
+    RDD = RDD.filter(col("title").isin(filter_origins))
+
+    RDD = RDD.withColumn(
+            "effectiveness",
+            when((col("status") == "Mensaje reproducido") | (col("status") == "Enrutamiento saliente")\
+                 | (col("status") == "Llamada contestada") | (col("status") == "Llamada transferida"), "Efectivo")
+            .otherwise("No efectivo")
+        )
+
+    return RDD
+
+input_folder = 'C:/Users/c.operativo/Downloads/Dev_/Código/Phyton/ShareFolder'
+output_folder = "C:/Users/c.operativo/Downloads/Dev_/Código/Phyton/Results/Resultado_General_IVR"
+output_folder2 = "C:/Users/c.operativo/Downloads/Dev_/Código/Phyton/Results/Efectividad_IVR_Reordenada"
+
+function_complete(input_folder, output_folder, output_folder2)
